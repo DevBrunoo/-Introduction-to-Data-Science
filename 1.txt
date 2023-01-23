@@ -1,0 +1,17 @@
+4 conjutos da linguagem SQL 
+
+DML que significa Dara manipulation language 
+(SELECT, INSERT, DELETE, UPDATE)
+
+DDL data definition langugae, contem os comandos reponsaveis
+por gerenciar o banco de dados. Com esses comandos podemos criar
+remover e mover objetos
+(CREATE, ALTER, DROP)
+
+DCL Data control language, lnguagem de controle de dados
+bloqueando ou permitindo o acesso de usuarios ao banco de dados
+(GRANT, REVOKE)
+
+DTL, Data transation language 'lingugaem de transação de dados
+são comandos que fornecem mecanismos para controlar as transacões no BD 
+(COMMIT, ROLLBACK)
