@@ -24,7 +24,7 @@ Sinais e comandos
 Esse e um <> diferente ou seja quando usado motrara o resultado diferente 
 
 WHERE = "SP"; mostrara o resultado de SP 
-WHERE <> "SP"; mostrara resultados diferentes de 
+WHERE <> "SP"; mostrara resultados diferentes de SP
 
 Utilizamos like para comece, ou seja sempre que colocarmos LIKE que dizer comece 
 
@@ -38,10 +38,10 @@ Utilizando LIMIT limitamos o resultado em quantas linhas forem necessarias.
 Exemplo 
 
 LIKE = "%O" LIMIT 2; vai trazer os resultados que terminam com O porem somente as duas primeiras linhas  
-WHERE sigla_estado LIKE "%P" LIMIT "3" ; vai trazer os resultados que terminam com O no sigla_estado porem so as 3 primeiras linhas 
+WHERE sigla_estado LIKE "%P" LIMIT "3" ; vai trazer os resultados que terminam com P no sigla_estado porem so as 3 primeiras linhas 
 
 OFSET utilizando esse comando conseguimos falar para pular linhas e mostrar o seguinte resultado 
-Exemplo: utilizando OFFSET 2 mandamos pular 2 linhas e mostrar os resultados 
+Exemplo: utilizando OFFSET 2; mandamos pular 2 linhas e mostrar os resultados 
 
 WHERE sigla_estados LIKE "S%" OFFSET 3; Estamos falando para reproduzir somente resultados que comecam com S porem antes pulando as 3 primeiras linhas com o uso de OFSET;
 
@@ -52,12 +52,11 @@ Exemplo:
 FROM pessoas ORDER BY primeiro_nome ASC; vai comecar com crescente 
 FROM pessoas ORDER BY ultimo_nome DESC; vai comecar com descrescente
 
-Utilizando LENGTH para saber quantos caractes tem, com Lenght voce 
+Utilizando LENGTH para saber quantos caracteres tem, com Lenght voce 
 consegui saber quantos caracteres tem a palavra ao lado. 
+
 Exemplos: 
-
 SELECT primeiro_nome, Lenght(primeiro_nome) FROM pessoas; Vai mostrar quantos caracteres tem cada palavra 
-
 DISTINCT utilizamos esse comando para saber quantas coisas sao distintas ou para deixar distintos
 
 Usamos COUNT(*) para contar seja como for. 

@@ -1,0 +1,5 @@
+Dicas do livro Design de bancos de dados Clare Chuecher
+
+1) Para tarefas de recuperacao de dados oy relatorios faca perguntas sobre quais atributos 
+podem ser usados para classificação, agrupamento e selecao de dados. 
+
