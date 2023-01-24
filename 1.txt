@@ -66,3 +66,20 @@ Usamos COUNT(*) para contar seja como for.
 ---------------------------------/-------
 Buscando dados em mais de uma tabela
 
+Existe uma maneira de fazer consultas no SQL usando duas tabelas 
+quando colocamos SELECT logo tambem no nome da coluna e necessario colocar 
+o nome da tabela com um ponto na frente o que deixaria da seguinte forma
+
+pessoas.sigla_estado "pessoas e o nome da tabela e o ponto indica de onde ela vem, sigla_estado e o nome da coluna"
+agora para fazer um "join" juntar vamos usar o seguinte comando INNER JOIN mesclando as duas tabelas ficaria da seguinte maneira 
+FROM pessoas INNER JOIN estados ON "veja que 'pessoas' e 'estados' são nome de tabelas";
+
+
+Agrupando os registros, para se fazer a contagem voce pode usar o atributo CONT(*) ira contar tudo 
+podemos fazer mais consultas agrupando mais ou menos dados, vamos ver algumas funcoes de agregação 
+usando a funcao AVG ela retorna a media das funcoes de um grupo, ignorando os nulos exemplo.
+quando queremos saber a media AVG(qte_pontos) ficaria a media da quantidade de pontos, criaria uma coluna mostrando a media 
+
+Utilizando MIM acontence praticamente a mesma coisa porem retorna minimo de pontos de media, e o uso e praticamente o mesmo
+bem parecida tambem e a funcao MAX que retorna o maior valor de cada grupo ignorando os nulos.
+se utilizar a SUM ela ira somar os valores de cada grupo ignorando os nulos.  
