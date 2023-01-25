@@ -94,3 +94,29 @@ SELECT primeiro_nome, ultimo_nome, nome_time, sigla_estado FROM pessoas WHERE no
 sigla_estado = "SP" OR sigla_estado = "MG" ORDEN BY sigla_estado. 
 
 Esse comando dara certo porem por estar com a orden de precedentes errada retornara resultados confusos. 
+
+Usamos AS para dizer passa a ser, se colocarmos ' pessoas AS oi ' o nome da coluna pessoas passa a ser oi
+utilizamos para mudar o nome, podemos utilizar no INNER JOIN que deixa muito mais facil. 
+
+INNER JOIN serve para que podemos fazer consultas em duas tabelas aparti de uma linha de comando somente.
+exemplo se colocamos ' FROM pessoas INNER JOIN estados ' o comando passa a innterpretar a tabela pessoas e estados 
+
+Para atulizar dados usamos esse comando UPDATE pessoas SET, porem tome cuidado ao usalo
+pessoas e o nome da tabela de dados, esse comando ira substituit todos os primeiro_nome por pedro, 
+para atualizar uma linha com enfase acrescente WHERE. O codigo modificando o nome de uma linha ficaria assim: 
+
+UPDATE pessoas SET primeiro_nome = "Pedro"
+WHERE primeiro_nome = "DaniMonteiro" 
+
+Vai trocar o nome DaniMonteiro para Pedro, aleterando somente uma linha 
+
+
+
+
+---------
+Quando tabalhamos com bandos de dados o pior erro
+que pode haver e nao ter erro, porque dados incorretos 
+sao mais perigosos que dados que apresentam problemas 
+na inclusao, exclusao e na alteração.
+
+Pior que perdes dados, e ter dados incorretos 
