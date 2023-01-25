@@ -82,3 +82,15 @@ quando queremos saber a media AVG(qte_pontos) ficaria a media da quantidade de p
 Utilizando MIM acontence praticamente a mesma coisa porem retorna minimo de pontos de media, e o uso e praticamente o mesmo
 bem parecida tambem e a funcao MAX que retorna o maior valor de cada grupo ignorando os nulos.
 se utilizar a SUM ela ira somar os valores de cada grupo ignorando os nulos.  
+
+--------ORDEN DE PRECEDENTES 
+
+A orden de precedentes e uma coisa crucial o comando pode ser executado de forma correta 
+porem se estiver na ordem errada dará resultados equivocados. 
+
+Exemplo: 
+
+SELECT primeiro_nome, ultimo_nome, nome_time, sigla_estado FROM pessoas WHERE nome_time = "Vermelho" AND 
+sigla_estado = "SP" OR sigla_estado = "MG" ORDEN BY sigla_estado. 
+
+Esse comando dara certo porem por estar com a orden de precedentes errada retornara resultados confusos. 
