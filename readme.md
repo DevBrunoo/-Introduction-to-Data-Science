@@ -7,11 +7,11 @@ This is a program that reads CSV files and interprets them in SQL, that is, from
 
 
 <a href="https://www.youtube.com/watch?v=yfqjQO0GAg0&t=662s">
-
-    <img src="https://i.ibb.co/dW5Qsbq/Miniatura-You-Tube-dinheiro-em-casa-dicas-gra-tis.png" alt="Miniatura-You-Tube-dinheiro-em-casa-dicas-gra-tis" border="0">
-
-
 </a>
+    <img src="./imgs/miniatura.png" alt="Miniatura-You-Tube-dinheiro-em-casa-dicas-gra-tis" border="0">
+    <img>
+
+
 
 ## Prerequisites
 
