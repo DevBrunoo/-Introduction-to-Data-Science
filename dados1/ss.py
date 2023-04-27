@@ -1,6 +1,6 @@
 import csv
 
-files = ["paises.csv", "sociais.csv"]
+files = ["dados1/paises.csv", "dados1/sociais.csv"]
 
 for filename in files:
   with open(filename, "r") as file:
