@@ -146,3 +146,13 @@ WHERE primeiro_nome = 'Pedro'
 
 SELECT * FROM pessoas
 WHERE primeiro_nome = 'Pedro'
+
+/* 
+A cláusula JOIN é usada para combinar as linhas de ambas as tabelas com base em uma coluna comum. Nesse caso, a coluna comum é "id".
+A cláusula ON especifica a condição de combinação das tabelas. Nesse caso, a condição é que o "id" da tabela "movies" deve ser igual ao "movie_id" da tabela "ratings".
+Por fim, a consulta usa a função AVG() para calcular a média das avaliações dos filmes que atendem à condição especificada.
+ */
+ SELECT title, rating FROM
+movies JOIN ratings ON movies.id = ratings.movie_id
+WHERE year == 2010 AND rating IS NOT NULL
+ORDER BY rating DESC, title;
